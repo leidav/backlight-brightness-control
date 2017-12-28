@@ -1,0 +1,2 @@
+SUBSYSTEM=="power_supply", ATTR{status}=="Charging", RUN+="/usr/local/bin/change_backlight.sh AC"
+SUBSYSTEM=="power_supply",ATTR{status}=="Discharging", RUN+="/usr/local/bin/change_backlight.sh BAT"
